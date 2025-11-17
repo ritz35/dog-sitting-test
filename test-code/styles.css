@@ -50,7 +50,7 @@ img#img-header-banner-wave {
     object-fit: cover;
 }
 
-/* ============================================= */
+/* ================== information in the header section=========================== */
 
 /* information div */
 div#info-container {
@@ -68,7 +68,7 @@ h1#header-h1, p#header-p {
 }
 
 
-/* ============================================== */
+/* =====================button section========================= */
 
 button {
     background-color: #de6c17;
@@ -77,12 +77,21 @@ button {
     color: white;
     border-radius: 10px;
 }
-/* ============================================= */
+/* ====================our services section========================= */
 div#our-services{
     margin-top: 5vh;
+    margin-bottom: 10vh;
     text-align: center;
 }
-/* ============================================= */
+h1#services-header{
+    font-size: 5vh;
+    margin-bottom: 1vh;
+}
+p#services-p{
+        color: grey;
+    font-size: 3vh;
+}
+/* =========================cards at the bottom of the page==================== */
 div#cards-wrapper{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
