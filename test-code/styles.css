@@ -6,13 +6,15 @@ h5,
 h6,
 p,
 button {
+    margin: 0;
+    padding: 0;
     font-family: "Quicksand";
 }
 
 /* header div */
 div#header {
     /* border: 3px solid red; */
-    height: 400vh;
+    /* height: 400vh; */
 }
 
 /* ======================================================= */
@@ -24,9 +26,20 @@ div#image-container {
 
 /* div for the main header image */
 img#img-header {
-    border: 3px solid purple;
     position: relative;
     width: 100%;
+    display: block;
+}
+image#img-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(255,0,0,1),
+        rgba(255,0,0,1)
+    );
+    pointer-events: none;
 }
 
 /* child height */
@@ -36,23 +49,41 @@ img#img-header-banner-wave {
     width: 100%;
     object-fit: cover;
 }
+
 /* ============================================= */
 
 /* information div */
 div#info-container {
     position: absolute;
-    top: 50%;
-    left: 25%;
+    top: 40vh;
+    left: 30vw;
     transform: translate(-50%, -50%);
-
     color: white;
+
+    font-size: 3vh;
 }
+
+h1#header-h1, p#header-p {
+    margin-bottom: 2vh;
+}
+
+
 /* ============================================== */
 
-button{
+button {
     background-color: #de6c17;
     border: none;
     padding: 2vh 2vw 2vh 2vw;
     color: white;
     border-radius: 10px;
+}
+/* ============================================= */
+div#our-services{
+    margin-top: 5vh;
+    text-align: center;
+}
+/* ============================================= */
+div#cards-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
