@@ -1,0 +1,58 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button {
+    font-family: "Quicksand";
+}
+
+/* header div */
+div#header {
+    /* border: 3px solid red; */
+    height: 400vh;
+}
+
+/* ======================================================= */
+/* div for the container of both images */
+div#image-container {
+    /* border: 3px solid green; */
+    position: relative;
+}
+
+/* div for the main header image */
+img#img-header {
+    border: 3px solid purple;
+    position: relative;
+    width: 100%;
+}
+
+/* child height */
+img#img-header-banner-wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    object-fit: cover;
+}
+/* ============================================= */
+
+/* information div */
+div#info-container {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+}
+/* ============================================== */
+
+button{
+    background-color: #de6c17;
+    border: none;
+    padding: 2vh 2vw 2vh 2vw;
+    color: white;
+    border-radius: 10px;
+}
