@@ -10,7 +10,8 @@ button {
     padding: 0;
     font-family: "Quicksand";
 }
-body{
+
+body {
     height: 200vh;
 }
 
@@ -33,15 +34,14 @@ img#img-header {
     width: 100%;
     display: block;
 }
+
 image#img-header::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        to right,
-        rgba(255,0,0,1),
-        rgba(255,0,0,1)
-    );
+    background: linear-gradient(to right,
+            rgba(255, 0, 0, 1),
+            rgba(255, 0, 0, 1));
     pointer-events: none;
 }
 
@@ -66,13 +66,13 @@ div#info-container {
     font-size: 3vh;
 }
 
-h1#header-h1, p#header-p {
+h1#header-h1,
+p#header-p {
     margin-bottom: 2vh;
 }
 
 
 /* =====================button section========================= */
-
 button {
     background-color: #de6c17;
     border: none;
@@ -80,42 +80,75 @@ button {
     color: white;
     border-radius: 10px;
 }
+
+button#alt {
+    background-color: white;
+    color: #de6c17;
+    font-size: 1vw;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
 /* ====================our services section========================= */
-div#our-services{
+div#our-services {
     margin-top: 5vh;
     margin-bottom: 10vh;
     text-align: center;
 }
-h1#services-header{
+
+h1#services-header {
     font-size: 5vh;
     margin-bottom: 1vh;
 }
-p#services-p{
-        color: grey;
+
+p#services-p {
+    color: grey;
     font-size: 3vh;
 }
+
 /* =========================cards at the bottom of the page==================== */
-div#cards-wrapper{
+div#cards-wrapper {
     display: grid;
     grid-template-columns: repeat(3, max-content);
     gap: 2vw;
-    text-align: center;
     margin-top: 5vh;
     /* border: 3px solid red; */
     justify-content: center;
 }
-div#card{
-    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+
+div#card {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     /* width: 100%; */
-    max-width: 300px;
-    text-align: center;
-    align-items: center;
+    max-width: 350px;
+    /* text-align: center;
+    align-items: center; */
     height: 100%;
     border-radius: 10px;
-    
-
+    overflow: hidden;
 }
-img#card-img{
-    border-radius: 10px;
+
+img#card-img {
+    /* border-radius: 10px; */
     width: 100%;
+}
+
+h2#card-header,
+p#card-p,
+button#alt {
+    padding-right: 1vw;
+    padding-bottom: 1vh;
+    padding-left: 1vw;
+}
+
+h2#card-header {
+    padding-top: 1vh;
+}
+
+p#card-p {
+    color: grey;
+}
+
+button#alt {
+    padding-bottom: 2vh;
 }
