@@ -12,7 +12,7 @@ button {
 }
 
 body {
-    height: 200vh;
+    height: 130vh;
 }
 
 /* header div */
@@ -62,8 +62,9 @@ div#info-container {
     left: 30vw;
     transform: translate(-50%, -50%);
     color: white;
-
     font-size: 3vh;
+    margin-left: 5vw;
+    margin-right: 20vw;
 }
 
 h1#header-h1,
@@ -151,4 +152,77 @@ p#card-p {
 
 button#alt {
     padding-bottom: 2vh;
+}
+
+/* =========================RESPONSIVENESS==================== */
+@media(max-width: 1024px) {
+    body {
+        height: 160vh;
+    }
+
+    /* Header text */
+    div#info-container {
+        top: 20vh;
+        left: 30vw;
+        font-size: 2.5vh;
+    }
+
+    /* Services section */
+    h1#services-header {
+        font-size: 4vh;
+    }
+
+    p#services-p {
+        font-size: 2vh;
+    }
+
+    div#cards-wrapper {
+        grid-template-columns: repeat(1, max-content);
+        gap: 4vw;
+    }
+
+    div#card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1vw;
+        max-width: 600px;
+    }
+
+    img#card-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    button#alt {
+        font-size: 2vh;
+    }
+}
+
+@media(max-width: 768px) {
+    body {
+        height: 160vh;
+    }
+
+    /* Header text */
+    div#info-container {
+        top: 15vh;
+        left: 35vw;
+        font-size: 2vh;
+        margin-left: 1vw;
+    }
+
+}
+
+@media(max-width: 480px) {
+    body {
+        height: 130vh;
+    }
+
+    /* Header text */
+    div#info-container {
+        top: 15vh;
+        left: 35vw;
+        font-size: 2vh;
+        margin-left: 1vw;
+    }
 }
